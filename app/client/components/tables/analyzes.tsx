@@ -18,17 +18,17 @@ const ItemList = () => {
         fetchData(); 
     }, []); 
 
-    const toggleShow = (itemId) => {
+    const toggleShow = (itemId: string) => {
       setShowMore(prevState => ({
           ...prevState,
+          // @ts-ignore
           [itemId]: !prevState[itemId]
       }));
   }
 
- 
     return ( 
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-            {items.map(item => ( item.is_actual ? 
+            {items.map(item => ( item?.is_actual ? 
                 <div onClick={() => toggleShow(item.id)} key={item.id} style={{ border: "2px solid #00D4FF", minHeight: "115px",height: 'auto', paddingTop:"15px", paddingLeft:"50px",paddingRight:"50px", paddingBottom:"15px", marginLeft:"150px" , marginTop:"15px", marginBottom:"15px", fontWeight:"bold", backgroundColor:"#49DDFB ", color:"black", width:"1200px", borderRadius:"20px"}}> 
                     <div className='title' style={{ display: "block",  fontSize:"25px", width:'500px'}}> 
                         {item.name}

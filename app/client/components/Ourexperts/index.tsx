@@ -1,7 +1,10 @@
 import Image from "next/image";
 
+interface OurexpertsProps {
+    is_main: boolean;
+  }
 
-const Ourexperts = ({is_main}) => {
+const Ourexperts: React.FC<OurexpertsProps> = ({ is_main }) => {
     let path = is_main ? "/images/doctors/main.jpeg" : '/images/olga.png'
     return (
         <div className="relative">
