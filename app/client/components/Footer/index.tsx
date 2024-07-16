@@ -67,11 +67,12 @@ const footer = () => {
     const openModal = () => {
         setIsOpen(true);
     };
-    function generateWhatsAppLink(name, question) {
+    function generateWhatsAppLink(name: string, question: string) {
         const phoneNumber = "996706922200"; // Ваш номер WhatsApp
         const message = `Здравствуйте, меня зовут ${name}.\nУ меня вот такой вопрос: "${question}".`;
         const encodedMessage = encodeURIComponent(message);
-        document.getElementById("whatsappLink").href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+        const whatsAppLink = document.getElementById("whatsappLink")
+        if (whatsAppLink) {whatsAppLink.setAttribute("href", `https://wa.me/${phoneNumber}?text=${encodedMessage}`)}
     }
 
     return (
