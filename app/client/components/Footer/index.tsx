@@ -31,7 +31,7 @@ const products: ProductType[] = [
 
 ]
 
-const footer = () => {
+const Footer = () => {
     let [isOpen, setIsOpen] = useState(false);
     
     const [inputValues, setInputValues] = useState({
@@ -256,4 +256,4 @@ const footer = () => {
     )
 }
 
-export default footer;
+export default Footer;
