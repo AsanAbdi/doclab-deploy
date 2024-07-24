@@ -2,7 +2,7 @@ import axios from 'axios'
 
 export const fetchAnalyzes = async () => {
     try {
-        const response = await axios.get('https://e962-176-123-246-58.ngrok-free.app/api/v1/analyzes/');
+        const response = await axios.get('http://localhost:8000/api/v1/analyzes/');
         return response.data;
     } catch (error) {
         console.error('Ошибка при получении данных:', error);        
