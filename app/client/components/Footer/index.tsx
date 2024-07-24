@@ -83,7 +83,11 @@ const Footer = () => {
                     {/* COLUMN-1 */}
 
                     <div className='col-span-4'>
-                        <h3 className='text-white text-4xl font-semibold leading-9 mb-4 lg:mb-20'>DocLab Laboratory</h3>
+                        <h3 className='text-white text-4xl font-semibold leading-9 mb-4 lg:mb-20'>
+                            <Link href='/'>
+                                DocLab Laboratory
+                            </Link>
+                        </h3>
                         <div className='flex gap-4'>
                             <div className='footer-icons'>
                                 <Link href="https://www.facebook.com/CurelineInc"><Image src={'/images/footer/vec.svg'} alt="facebook" width={15} height={20} /></Link>
@@ -156,10 +160,10 @@ const Footer = () => {
                             <h3 className='text-center md:text-start text-offwhite text-lg'>@2024 - All Rights Reserved by Imbalance duo</h3>
                         </div>
                         <div className="flex justify-center md:justify-end">
-                            <Link href="/">
+                            <Link href="/client/policy">
                                 <h3 className="text-offwhite pr-6">Политика конфиденциальности</h3>
                             </Link>
-                            <Link href="/">
+                            <Link href="/client/policy">
                                 <h3 className="text-offwhite pl-6 border-solid border-l border-footer">Условия использования</h3>
                             </Link>
                         </div>
