@@ -12,7 +12,8 @@ import Testimonials from './components/Testimonials/index';
 import Articles from './components/Articles/index'; 
 import Joinus from './components/Joinus/index'; 
 import Insta from './components/Insta/index'; 
-import Map from './components/Map/index'; 
+import Map from './components/Map/index';
+import Salym from './components/Salym/index'; 
  
  
 export default function Home() { 
@@ -22,6 +23,7 @@ export default function Home() {
       {/* <Aboutus /> */} 
       <Digital /> 
       <Dedicated /> 
+      <Salym/>
       {/* <Beliefs /> */} 
       {/* <Wework /> */} 
       <Ourteam /> 
