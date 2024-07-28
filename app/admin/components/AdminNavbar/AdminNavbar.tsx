@@ -6,9 +6,6 @@ import { Bars3Icon } from "@heroicons/react/24/outline";
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import Contactusform from "./Contactus";
-// import Logo from "../../../public/images/Logo/Logo.png";
-import Image from "next/image";
-import { link } from "fs";
 
 interface NavigationItem {
   name: string;
@@ -17,42 +14,38 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: "О нас",  href: '/client/aboutcom', current: false },
-  { name: "Клиентам", href: "/client/services", current: false },
-  { name: "Докторам", href: "/client/services_docs", current: false },
-  { name: "Команда", href: "/client/expert", current: false },
-  { name: "Вакансии", href: "/client/vacancy", current: false },
+  { name: "Posts", href: "/admin/posts", current: false },
+  { name: "Call request", href: "/admin/call_request", current: false },
+  { name: "Vacancies", href: "/admin/vacancies", current: false },
 ];
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Navbar = () => {
+const AdminNavbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
     <Disclosure as="nav" className="navbar">
       <>
-        <div className="mx-3 md:mx-15 max-w-8xl p-3 md:p-4 lg:px-8">
+        <div className="mx-auto max-w-7xl p-3 md:p-4 lg:px-8">
           <div className="relative flex h-12 sm:h-20 items-center">
-            <div className="flex flex-1 items-center sm:justify-around">
+            <div className="flex flex-1 items-center sm:justify-between">
               {/* LOGO */}
 
               <div className="flex flex-shrink-0 items-center border-right">
                 <Link
-                  href="/"
+                  href="/admin"
                   className="text-2xl sm:text-4xl font-semibold text-black"
                 >
-                  <h1>
-                    DocLab Labaratory
-                  </h1>
+                  DocLab Admin
                 </Link>
               </div>
 
               {/* LINKS */}
 
-              <div className="hidden lg:flex items-center border-right">
+              <div className="hidden lg:flex items-center border-right ">
                 <div className="flex justify-end space-x-4">
                   {navigation.map((item) => (
                     <Link
@@ -62,8 +55,7 @@ const Navbar = () => {
                         item.current
                           ? "bg-gray-900"
                           : "navlinks hover:text-black",
-                        "px-3 py-4 rounded-md text-lg font-semibold text-xl",
-                        "whitespace-nowrap" // Добавляем класс для предотвращения переноса текста
+                        "px-3 py-4 rounded-md text-lg font-normal"
                       )}
                       aria-current={item.href ? "page" : undefined}
                     >
@@ -72,7 +64,6 @@ const Navbar = () => {
                   ))}
                 </div>
               </div>
-
               {/* <button className='hidden lg:flex justify-end text-xl font-semibold bg-transparent py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-navyblue hover:text-white'>Contact us</button> */}
               <Contactusform />
             </div>
@@ -101,4 +92,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default AdminNavbar;
