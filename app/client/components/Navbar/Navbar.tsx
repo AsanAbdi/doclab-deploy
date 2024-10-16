@@ -17,11 +17,10 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: "О нас",  href: '/client/aboutcom', current: false },
-  { name: "Клиентам", href: "/client/services", current: false },
-  { name: "Докторам", href: "/client/services_docs", current: false },
+  { name: "О центре",  href: '/client/aboutcom', current: false },
+  { name: "Пациентам", href: "/client/services", current: false },
+  { name: "Специалистам", href: "/client/services_docs", current: false },
   { name: "Команда", href: "/client/expert", current: false },
-  { name: "Вакансии", href: "/client/vacancy", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -45,7 +44,7 @@ const Navbar = () => {
                   className="text-2xl sm:text-4xl font-semibold text-black"
                 >
                   <h1>
-                    DocLab Labaratory
+                    DocLab
                   </h1>
                 </Link>
               </div>
