@@ -19,22 +19,22 @@ import Salym from './components/Salym/index';
 export default function Home() { 
   return ( 
     <main> 
-      <Banner /> 
-      {/* <Aboutus /> */} 
-      <Digital /> 
-      <Dedicated /> 
-      <Salym/>
-      {/* <Beliefs /> */} 
-      {/* <Wework /> */} 
-      <Ourteam /> 
-      {/* <Featured /> */} 
-      {/* <Manage />  */} 
-      {/* <FAQ /> */} 
-      {/* <Testimonials /> */} 
-      {/* <Articles /> */} 
-      {/* <Joinus /> */} 
-      {/* <Insta /> */}                                                                                
-      <Map /> 
-          </main> 
+        <Banner /> 
+        {/* <Aboutus /> */} 
+        <Digital /> 
+        <Dedicated /> 
+        <Salym/>
+        {/* <Beliefs /> */} 
+        {/* <Wework /> */} 
+        <Ourteam /> 
+        {/* <Featured /> */} 
+        {/* <Manage />  */} 
+        {/* <FAQ /> */} 
+        {/* <Testimonials /> */} 
+        {/* <Articles /> */} 
+        {/* <Joinus /> */} 
+        {/* <Insta /> */}                                                                                
+        <Map /> 
+    </main> 
   ) 
 }

@@ -83,9 +83,9 @@ const Footer = () => {
                     {/* COLUMN-1 */}
 
                     <div className='col-span-4'>
-                        <h3 className='text-white text-4xl font-semibold leading-9 mb-4 lg:mb-20'>
+                        <h3 className='text-white text-6xl font-semibold leading-9 mb-4 lg:mb-20'>
                             <Link href='/'>
-                                DocLab Laboratory
+                               DocLab
                             </Link>
                         </h3>
                         <div className='flex gap-4'>
@@ -120,7 +120,7 @@ const Footer = () => {
                         </div>
 
                         <div className="group relative col-span-2">
-                            <p className="text-white text-xl font-extrabold mb-10">О нас</p>
+                            <p className="text-white text-xl font-extrabold mb-10">О центре</p>
                             <ul>
                                 <li className='mb-5'>
                                     <Link href="/client/aboutcom" className="text-white text-lg font-normal mb-6 space-links">О нас</Link>
@@ -141,10 +141,7 @@ const Footer = () => {
                                     <Link href="/client/expert" className="text-white text-lg font-normal mb-6 space-links">Наши сотрудники</Link>
                                 </li>
                                 <li className='mb-5'>
-                                    <Link href="/client/expert" className="text-white text-lg font-normal mb-6 space-links">Глав врач</Link>
-                                </li>
-                                <li className='mb-5'>
-                                    <Link href="/client/expert" className="text-white text-lg font-normal mb-6 space-links">Лучший работник</Link>
+                                    <Link href="/client/expert" className="text-white text-lg font-normal mb-6 space-links">Руководство</Link>
                                 </li>
                             </ul>
                         </div>
@@ -157,7 +154,7 @@ const Footer = () => {
                 <div className="pt-5 pb-5 px-4 sm:px-6 lg:px-4 border-solid border-t border-footer">
                     <div className="mt-4 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 xl:gap-x-8">
                         <div>
-                            <h3 className='text-center md:text-start text-offwhite text-lg'>@2024 - All Rights Reserved by Imbalance duo</h3>
+                            <h3 className='text-center md:text-start text-offwhite text-lg'>@2024 - All Rights Reserved by DocLab</h3>
                         </div>
                         <div className="flex justify-center md:justify-end">
                             <Link href="/client/policy">
