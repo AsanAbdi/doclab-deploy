@@ -26,7 +26,7 @@ export default function Home() {
         <Salym/>
         {/* <Beliefs /> */} 
         {/* <Wework /> */} 
-        <Ourteam /> 
+        {/* <Ourteam />  */}
         {/* <Featured /> */} 
         {/* <Manage />  */} 
         {/* <FAQ /> */} 

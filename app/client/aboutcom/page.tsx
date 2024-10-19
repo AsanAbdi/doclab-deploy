@@ -13,7 +13,7 @@ export default function us() {
          {/* <Testimonials />  */}
          <Aboutus />
          <Featured />
-         <History />
+         {/* <History /> */}
          <Histext />
          
         </>

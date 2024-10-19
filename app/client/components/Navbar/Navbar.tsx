@@ -53,7 +53,7 @@ const Navbar = () => {
                 </Link>
               </div>
 
-              {/* Основная навигация */}
+              {/* Основная навигация для больших экранов */}
               <div className="hidden lg:flex items-center space-x-6">
                 <div className="flex justify-end items-center space-x-4">
                   {navigation.map((item) =>
@@ -109,6 +109,7 @@ const Navbar = () => {
                 </div>
               </div>
 
+              {/* Контактная форма */}
               <Contactusform />
             </div>
 
