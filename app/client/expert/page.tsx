@@ -9,7 +9,7 @@ export default function expert() {
          <Ourexperts is_main={false}/> 
     
          <Articles /> 
-         <Ourexperts is_main={true}/> 
+         {/* <Ourexperts is_main={true}/>  */}
     
         </>
     )

@@ -17,9 +17,17 @@ const Dedicated = () => {
 
                     {/* COLUMN-2 */}
                     <div className="relative">
-                        <h2 className="text-4xl lg:text-65xl pt-4 font-bold sm:leading-tight mt-5 text-center lg:text-start">Наш главный партнер</h2>
-                        <h5 className="font-medium text-lightblack text-2xl mt-5 text-center lg:text-start">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est dolore, adipisci exercitationem nobis repellat placeat debitis quisquam velit tempora laudantium natus pariatur a praesentium id. Non modi sint tenetur qui saepe rerum, doloribus perferendis sunt ducimus deleniti, temporibus facere sequi quam quo ex! Delectus modi consectetur iusto, maiores fuga neque!</h5>
-                        <p className="text-2xl font-semibold mt-12 lg:ml-32 text-center lg:text-start">&quot;Doc University Clinic&quot;</p>
+                            <h2 className="text-3xl lg:text-5xl pt-4 font-bold sm:leading-tight mt-5 text-center lg:text-start">
+                                Наш главный партнер
+                            </h2>
+                            <h5 className="font-medium text-lightblack text-2xl mt-5 text-center lg:text-start">
+                                Ольга Потапова генеральный директор <br/>
+                                <a href="https://www.cureline.com/" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">
+                                    Cureline Group
+                                </a>
+                            </h5>
+
+                        {/* <p className="text-2xl font-semibold mt-12 lg:ml-32 text-center lg:text-start">&quot;Doc University Clinic&quot;</p> */}
                     </div>
 
                 </div>

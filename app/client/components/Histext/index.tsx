@@ -18,8 +18,7 @@ const Histext = () => {
                     {/* COLUMN-2 */}
                     <div className="relative">
                         <h2 className="text-4xl lg:text-65xl pt-4 font-bold sm:leading-tight mt-5 text-center lg:text-start">Первое открытие</h2>
-                        <h2 className="text-2xl lg:text-55xl pt-4 font-bold sm:leading-tight mt-5 text-center lg:text-start"> <br/> В начале 2020 года в Кыргызстане началось увлечение современными научными технологиями и медицинскими исследованиями. Молодые ученые, окончившие зарубежные университеты с высокими отметками, вернулись в свою родную страну с желанием внести свой вклад в медицинскую науку.<br/>
-Одним из таких молодых ученых был доктор Алим, который окончил университет в США с докторской степенью в области биомедицины. Вернувшись в Кыргызстан, он осознал потенциал для развития медицинской науки в стране. </h2>
+                        <h2 className="text-2xl lg:text-55xl pt-4 font-bold sm:leading-tight mt-5 text-center lg:text-start"> <br/> заполнить текстом и поменять фотку </h2>
                         
                     </div>
 
