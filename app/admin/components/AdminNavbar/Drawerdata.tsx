@@ -12,7 +12,6 @@ const navigation: NavigationItem[] = [
   { name: "Analysis", href: "/admin/analysis", current: false },
   { name: "Posts", href: "/admin/posts", current: false },
   { name: "Call request", href: "/admin/call_request", current: false },
-  { name: "Vacancies", href: "/admin/vacancies", current: false },
 ];
 
 function classNames(...classes: string[]) {

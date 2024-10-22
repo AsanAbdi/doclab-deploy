@@ -1,10 +1,10 @@
 import React from 'react';
 import Analyze from '../components/analyze-result/index';
 
-const PolicyPage: React.FC = () => {
+const Analyze_ResultPage: React.FC = () => {
     return (
         <Analyze />
     );
 };
 
-export default PolicyPage;
+export default Analyze_ResultPage;
