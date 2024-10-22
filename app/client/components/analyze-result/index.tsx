@@ -40,6 +40,7 @@ const Analyze = () => {
     return (
         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
             <h1>Информация о пользователе</h1>
+            <h1>Результаты анализа</h1>
             {data.map((item) => (
                 <div key={item.id} style={{ border: '1px solid #ccc', padding: '20px', marginBottom: '20px' }}>
                     <p><strong>Имя пользователя:</strong> {item.user_full_name}</p>
