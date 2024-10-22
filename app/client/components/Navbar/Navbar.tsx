@@ -11,20 +11,17 @@ interface NavigationItem {
   name: string;
   href: string;
   current: boolean;
-  submenu?: { name: string; href: string }[]; // Поддержка для подменю
+  submenu?: { name: string; href: string }[];
 }
 
-// Навигационные элементы
 const navigation: NavigationItem[] = [
   {
     name: "О центре",
     href: "#",
     current: false,
     submenu: [
-      { name: "История", href: "/about/history" },
-      { name: "Руководство", href: "/about/mission" },
-      { name: "Оборудование", href: "/about/contact" },
-      { name: "Документы", href: "/about/contact" },
+      { name: "История", href: "/client/aboutcom" },
+      { name: "Документы", href: "/client/docum" },
     ],
   },
   { name: "Лабораторные исследования", href: "/client/services", current: false },
@@ -32,7 +29,6 @@ const navigation: NavigationItem[] = [
   { name: "Команда", href: "/client/expert", current: false },
 ];
 
-// Функция для объединения классов
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
@@ -41,8 +37,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <Disclosure as="nav" className="navbar fixed top-0 left-0 right-0 z-10 bg-white shadow">
-      <>
+    <>
+      {/* Фиксированный навбар */}
+      <Disclosure as="nav" className="navbar fixed top-0 left-0 right-0 z-10 bg-white shadow">
         <div className="mx-3 md:mx-15 max-w-8xl p-3 md:p-4 lg:px-8">
           <div className="relative flex h-12 sm:h-20 items-center justify-between">
             <div className="flex flex-1 items-center sm:justify-around">
@@ -59,7 +56,7 @@ const Navbar = () => {
                   {navigation.map((item) =>
                     item.submenu ? (
                       <Disclosure key={item.name} as="div" className="relative">
-                        {({ open }) => (
+                        {({ open, close }) => (
                           <>
                             <Disclosure.Button className="flex items-center text-xl font-semibold text-black hover:text-black">
                               {item.name}
@@ -74,6 +71,7 @@ const Navbar = () => {
                                     key={subItem.name}
                                     href={subItem.href}
                                     className="block px-12 py-4 text-gray-700 border border-transparent transition duration-200 hover:bg-gray-100 hover:border-gray-400 hover:shadow-lg hover:shadow-gray-400"
+                                    onClick={() => close()} // Закрытие дропдауна при клике
                                   >
                                     {subItem.name}
                                   </Link>
@@ -124,8 +122,13 @@ const Navbar = () => {
             </Drawer>
           </div>
         </div>
-      </>
-    </Disclosure>
+      </Disclosure>
+
+      {/* Отступ для контента ниже фиксированного навбара */}
+      <div style={{ paddingTop: '80px' }}>
+        {/* Весь основной контент страницы должен быть внутри этого контейнера */}
+      </div>
+    </>
   );
 };
 
