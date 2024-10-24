@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { fetchAnalyze } from '../../api/analyzes/api.js';
-import { useSearchParams } from 'next/navigation'; // Use useSearchParams instead of useRouter
+import { notFound, useSearchParams } from 'next/navigation'; // Use useSearchParams instead of useRouter
 
 const Analyze = () => {
     const searchParams = useSearchParams();
@@ -19,7 +19,11 @@ const Analyze = () => {
                 const data = await fetchAnalyze(order_id); // Fetch data using order_id
                 if (data) {
                     setData(data);
-                }
+                } else{
+                    return {
+                      notFound: true,
+                    }
+                  }
             } catch (err) {
                 setError("Failed to fetch data.");
                 console.error(err);
