@@ -42,7 +42,7 @@ const Analyze = () => {
             <h1>Информация о пользователе</h1>
             <h1>Результаты анализа</h1>
             {data.map((item) => (
-                <div key={item.id} style={{ border: '1px solid #ccc', padding: '20px', marginBottom: '20px' }}>
+                <div key={item.id} >
                     <p><strong>Имя пользователя:</strong> {item.user_full_name}</p>
                     <p><strong>Возраст пользователя:</strong> {item.user_age}</p>
                     <p><strong>Пол пользователя:</strong> {item.user_gender}</p>
@@ -50,10 +50,8 @@ const Analyze = () => {
                     <p><strong>Дата сбора образца:</strong> {item.date_of_specimen_collection}</p>
                     <p><strong>Дата получения образца:</strong> {item.date_of_receipt_specimen}</p>
                     <p><strong>Результат:</strong> {item.result}</p>
-
                     <p><strong>QR код: </strong></p>
                     <img src={item.qr_code} alt="QR code" style={{ maxWidth: '200px', maxHeight: '200px' }} />
-
                     <p><strong>Скачать PDF анализ:</strong> <a href={item.pdf} target="_blank" rel="noopener noreferrer">Скачать PDF</a></p>
                 </div>
             ))}

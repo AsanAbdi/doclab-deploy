@@ -1,5 +1,5 @@
 import React from 'react';
-import Analyze from '../components/analyze-result/index';
+import Analyze from '../components/info-pages/index';
 
 const Analyze_ResultPage: React.FC = () => {
     return (
